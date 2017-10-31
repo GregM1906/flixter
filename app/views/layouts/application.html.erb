@@ -9,7 +9,8 @@
   </head>
 
   <body>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div id="flex-content-container">
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,12 +21,15 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
+          <% if !user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to "Sign in", new_user_session_path, class: "nav-link" %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to "Sign out", destroy_user_session_path, class: "nav-link", method: :delete %>
+            </li>
+          <% end %>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -33,7 +37,27 @@
         </form>
       </div>
     </nav>
+    
+    
+    
+    <% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    
+    
+
 
     <%= yield %>
+      <div id="footer">
+      <div class="container">
+      <b>I am FOOTER!</b>
+      <br />
+        <%= link_to 'Link', '#' %>
+      </div>
+        </div>
+    </div>
   </body>
 </html>
