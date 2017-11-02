@@ -17,13 +17,20 @@ body {
   width: 100%;
   min-height: 100px;
   background-color: rgba(0, 0, 0, 0.9);
-  color: grey;
+  color: lightgray;
   font-family: "Helvetica Neue", Helvetica;
   padding: 10px 0px;
   margin-top: 30px;
 }
 
 #footer a {
-  color: grey;
-  font-weight: 100;
+  color: lightgray;
+  font-weight: bold;
 }
+
+#footer a:hover, a:active {
+  font-family: "Helvetica Neue", Helvetica;
+    color: white;
+  font-weight: bold;
+}
+
