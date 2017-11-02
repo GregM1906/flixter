@@ -6,11 +6,11 @@ body {
 }
 
 .link_style {
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
 a:link, a:visited {
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica;
     color: darkcyan;
     padding: 14px 25px;
     text-align: center; 
@@ -19,7 +19,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Helvetica Neue", Helvetica;
     color: darkturquoise;
 }
 
@@ -124,7 +124,11 @@ button {
   margin: 10px;
 }
 
-
+.flixter_logo {
+  font-family: "Helvetica Neue", Helvetica;
+  color: fuchsia;
+  
+}
 
 
 
