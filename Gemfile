@@ -5,6 +5,7 @@ gem 'popper_js', '~> 1.12.3'
 gem 'simple_form'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
