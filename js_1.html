@@ -1,0 +1,33 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		var num = 1;
+		var num2 = 1.0;
+		var string = "hello!";
+		var array = [1,2,3];
+		var hash = {
+			"1": "One",
+			"2": "Two",
+			"3": "Three",
+			"4": "Four"
+		}
+	</script>
+	<script>
+		$(function() {
+		var h2Element = $('h2');
+		var times = 0;
+		h2Element.html("I got clicked " + times + " times");
+		h2Element.click(function() {
+				times = times + 1;
+		  h2Element.html("I got clicked " + times + " times");
+		});
+		});
+	</script>
+	<h1 class="headline">Hello!</h1>
+	<h2 class="headline">Goodbye :(</h2>
+	</body>
+</html>

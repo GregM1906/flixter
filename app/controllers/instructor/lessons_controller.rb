@@ -12,10 +12,10 @@ class Instructor::LessonsController < ApplicationController
   end
 
   private
-  
+
   def require_authorized_for_current_section
     if current_section.course.user != current_user
-      return render plain: 'Unauthorized', status: :unauthorized
+      render plain: 'Unauthorized', status: :unauthorized
     end
   end
 
@@ -24,7 +24,12 @@ class Instructor::LessonsController < ApplicationController
     @current_section ||= Section.find(params[:section_id])
   end
 
-  
+  def lesson_params
+    params.require(:lesson).permit(:title, :subtitle, :video)
+  end
+end
+
+
 #  this line of code
 #  ====>
 #          @current_section ||=
@@ -40,8 +45,3 @@ class Instructor::LessonsController < ApplicationController
 #  
 #  In short, this single line ( @current_section ||= ) says: if we've looked up the current_section beforehand use the value that we looked up previously. If we haven't looked up this section before, go into the database, look it up and also make sure to remember the value in case we need to look it up again later. This technique of storing certain values inside of the memory to reduce the times we have to find a certain value inside the database is called memoization.
 #
-  
-  def lesson_params
-    params.required(:lesson).permit(:title, :subtitle)
-  end
-end
