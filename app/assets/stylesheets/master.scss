@@ -26,18 +26,26 @@ a:hover, a:active {
 
 
 h1, h2, h3, h4, h5, h6, .navbar {
-  margin: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+h3:after {
+    content:"";
+    display: inline-block;
+    height: 0.3em;
+	vertical-align: middle;
+    width: 130%;
+    margin-right: 0;
+    margin-left: 5px;
+    border-top: 1.5px solid white;
 }
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('top_nav_bg.jpg')no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  opacity: .8;
+  background: image_url('bg.png');
 }
 
 .navbar-brand {
@@ -103,7 +111,7 @@ btn {
 }
 
 .frosty {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
@@ -149,7 +157,6 @@ btn {
   
 }
 
-
 .help-block {
   color: #ff3333;
   background-color: #FFEEEE;
@@ -168,12 +175,34 @@ btn {
   clear: both;
 }
 
+.course_name {
+	justify-content: center;
+}
+
 .course_description {
 	font-family: sans-serif;
 	font-weight: 100;
 }
 
+hr {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+	width: 83%;
+}
 
-
-
-
+img {
+	position: relative;
+	object-fit: cover;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	height: 100px;
+	max-width: 100%;
+}
