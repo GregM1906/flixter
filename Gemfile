@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '4.0.0.alpha6'
 gem 'tether-rails'
 gem 'popper_js', '~> 1.12.3'
 gem 'simple_form'
