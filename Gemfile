@@ -9,6 +9,7 @@ gem "mini_magick"
 gem "figaro"
 gem "fog-aws"
 gem 'carrierwave-aws'
+gem 'devise'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
