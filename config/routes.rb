@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
 	devise_for :users
 	root 'static_pages#index'
 	resources :courses, only: [:index, :show] do
@@ -14,5 +13,10 @@ Rails.application.routes.draw do
 		resources :courses, only: [:new, :create, :show] do
 			resources :sections, only: [:new, :create]
 		end
+	end
+	
+	resources :posts do
+		resources :comments, except: [:index, :show, :new, :edit]
+		get 'map', to: 'map#show'
 	end
 end
