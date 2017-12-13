@@ -10,6 +10,8 @@ gem "fog-aws"
 gem 'carrierwave-aws'
 gem 'devise'
 gem 'stripe'
+gem 'ranked-model'
+
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
