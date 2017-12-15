@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 	resources :lessons, only: [:show]
 
 	namespace :instructor do
+		resources :lessons, only: [:update]
 		resources :sections, only: [] do
 			resources :lessons, only: [:new, :create]
 		end
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
 			resources :sections, only: [:new, :create]
 		end
 	end
-	
+
 	resources :posts do
 		resources :comments, except: [:index, :show, :new, :edit]
 		get 'map', to: 'map#show'

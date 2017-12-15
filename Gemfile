@@ -11,6 +11,7 @@ gem 'carrierwave-aws'
 gem 'devise'
 gem 'stripe'
 gem 'ranked-model'
+gem 'jquery-ui-rails'
 
 
 git_source(:github) do |repo_name|
