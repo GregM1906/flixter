@@ -12,6 +12,7 @@ gem 'devise'
 gem 'stripe'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem "font-awesome-rails"
 
 
 git_source(:github) do |repo_name|

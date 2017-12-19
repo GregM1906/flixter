@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 body {
   background: image_url('bg.png');
@@ -13,7 +14,7 @@ a:link, a:visited {
   font-family: "Helvetica Neue", Helvetica;
     color: white;
     padding: 14px 25px;
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
@@ -89,7 +90,7 @@ btn {
 .btn-outline-success {
   color: black;
   border-color: black;
-  
+
 }
 
 .btn-primary {
@@ -160,7 +161,7 @@ btn {
 .flixter_logo {
   font-family: "Helvetica Neue", Helvetica;
   color: fuchsia;
-  
+
 }
 
 .help-block {
@@ -235,4 +236,42 @@ img {
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #bebebed #e4e4e4;
+  padding: 20px;
+  margin: 20px;
+}
+
+ul .header {
+  font-size: 25;
+}
+
+ul .header .fa {
+  font-size: 20px;
+}
+
+.lessons li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p {
+  maring: 0;
 }
