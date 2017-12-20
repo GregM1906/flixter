@@ -47,12 +47,51 @@
 
     <%= yield %>
       <div id="footer">
-      <div class="container">
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
-      <b>I am FOOTER!</b>
-      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-3">
+              <b>Teachers</b>
+              <br />
+              <%= link_to 'Teach a Course', new_instructor_course_path %>
+              <br />
+              <%= link_to 'My Dashboard', dashboard_path %>
+            </div>
+            <div class="col-12 col-sm-3">
+              <b>About</b>
+              <br />
+              <%= link_to 'Team', '#' %>
+              <br />
+              <%= link_to 'Careers', '#' %>
+              <br />
+              <%= link_to 'Privacy Policy', '#' %>
+              <br />
+            </div>
+            <div class="col-12 col-sm-3">
+              <b>Contact</b>
+              <br />
+              ken@thefirehoseproject.com
+              <br />
+              One Kendall Square
+              <br />
+              Cambridge MA, 02113
+            </div>
+            <div class="col-12 col-sm-3 social">
+              <b>Social</b>
+              <br />
+              <br />
+              <%= link_to 'https://github.com/GregM1906' do %>
+                <span class="fa fa-github-square fa-2x social-button"></span>
+              <% end %>
+              <%= link_to 'https://github.com/GregM1906' do %>
+                <span class="fa fa-facebook-square fa-2x social-button"></span>
+              <% end %>
+              <%= link_to 'https://github.com/GregM1906' do %>
+                <span class="fa fa-twitter-square fa-2x social-button"></span>
+              <% end %>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
 	<script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
