@@ -1,16 +1,16 @@
 <div class="hero">
 	<br />
 	<div class="navbar-brand col-10 offset-1">
-		
+
 		<div class="frosty col-10 offset-1">
 		<h1 class="text-truncate">Learn something today</h1>
 		</div>
-		
+
 		<br />
 		<br />
 		<% @courses.each do |course| %>
 		<div class="frosty col-10 offset-1">
-			
+
 		<h3 class="text-truncate">
 		<%= link_to course.title, course_path(course) %>
 		</h3>
@@ -18,9 +18,9 @@
 		<h6 class="course_description">
 		<%= course.description %>
 		</h6>
-			
+
 		<br />
-		<%= image_tag course.image, class:'img-fluid', :size => '100X100' %>
+		<%= image_tag course.image, class:'img-fluid' %>
 		<br />
 		<br />
 		<%= link_to 'More details...', course_path(course), class: 'btn btn-primary btn-large' %>
